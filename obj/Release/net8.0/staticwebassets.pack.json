@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\chunk-3BEGBXT3.js",
+      "PackagePath": "staticwebassets\\chunk-3BEGBXT3.js"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\chunk-ATB22WYP.js",
+      "PackagePath": "staticwebassets\\chunk-ATB22WYP.js"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\main-557R2VG4.js",
+      "PackagePath": "staticwebassets\\main-557R2VG4.js"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\Inter-italic.var-YRHKCDAA.woff2",
+      "PackagePath": "staticwebassets\\media\\Inter-italic.var-YRHKCDAA.woff2"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\Inter-roman.var-5VGNBR6A.woff2",
+      "PackagePath": "staticwebassets\\media\\Inter-roman.var-5VGNBR6A.woff2"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\color-727V6BA6.png",
+      "PackagePath": "staticwebassets\\media\\color-727V6BA6.png"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\hue-3YTJE6JS.png",
+      "PackagePath": "staticwebassets\\media\\hue-3YTJE6JS.png"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\primeicons-4GST5W3O.woff2",
+      "PackagePath": "staticwebassets\\media\\primeicons-4GST5W3O.woff2"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\primeicons-DHQU4SEP.svg",
+      "PackagePath": "staticwebassets\\media\\primeicons-DHQU4SEP.svg"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\primeicons-GEFHGEHP.ttf",
+      "PackagePath": "staticwebassets\\media\\primeicons-GEFHGEHP.ttf"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\primeicons-P53SE5CV.woff",
+      "PackagePath": "staticwebassets\\media\\primeicons-P53SE5CV.woff"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\media\\primeicons-RSSEDYLY.eot",
+      "PackagePath": "staticwebassets\\media\\primeicons-RSSEDYLY.eot"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\polyfills-B6TNHZQ6.js",
+      "PackagePath": "staticwebassets\\polyfills-B6TNHZQ6.js"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\styles-D4GX3K5I.css",
+      "PackagePath": "staticwebassets\\styles-D4GX3K5I.css"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\uploads\\36a8ef7c-530a-4dfc-a790-261e6a9bc3ed.pdf",
+      "PackagePath": "staticwebassets\\uploads\\36a8ef7c-530a-4dfc-a790-261e6a9bc3ed.pdf"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\uploads\\7d18a563-4640-41cd-aad6-38af11075a5d.pdf",
+      "PackagePath": "staticwebassets\\uploads\\7d18a563-4640-41cd-aad6-38af11075a5d.pdf"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\uploads\\b04479a4-0135-4733-8461-5a08a3bdb50e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\b04479a4-0135-4733-8461-5a08a3bdb50e.pdf"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\uploads\\d428c356-3d62-4782-9079-902645ab780a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\d428c356-3d62-4782-9079-902645ab780a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\דיני רוטנר\\BinyanAv-Project\\BinyanAv.PublicGateway\\wwwroot\\uploads\\photos\\r2_7e2b1149-29af-48e7-af0c-6c8902f2d211.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photos\\r2_7e2b1149-29af-48e7-af0c-6c8902f2d211.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BinyanAv.PublicGateway.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BinyanAv.PublicGateway.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.BinyanAv.PublicGateway.props",
+      "PackagePath": "build\\BinyanAv.PublicGateway.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BinyanAv.PublicGateway.props",
+      "PackagePath": "buildMultiTargeting\\BinyanAv.PublicGateway.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.BinyanAv.PublicGateway.props",
+      "PackagePath": "buildTransitive\\BinyanAv.PublicGateway.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

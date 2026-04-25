@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>BinyanAv.PublicGateway</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="BuildAngularRegistrationSpa" BeforeTargets="Publish">
+    <PropertyGroup>
+      <ClientAppDir>$(MSBuildProjectDirectory)\..\BinyanAv-Client\</ClientAppDir>
+      <ClientDistDir>$(ClientAppDir)dist\binyan-av-client\</ClientDistDir>
+    </PropertyGroup>
+
+    <!-- Build Angular app (cached by package-lock). Requires Node/NPM installed on build machine. -->
+    <Exec WorkingDirectory="$(ClientAppDir)" Command="npm ci --legacy-peer-deps &amp;&amp; npm run build -- --configuration production" />
+
+    <!-- Copy Angular build output into Gateway wwwroot (served by UseStaticFiles). -->
+    <RemoveDir Directories="wwwroot\app" Condition="Exists('wwwroot\app')" />
+    <MakeDir Directories="wwwroot" />
+    <Copy SourceFiles="$(ClientDistDir)index.html" DestinationFiles="wwwroot\index.html" SkipUnchangedFiles="true" />
+    <ItemGroup>
+      <SpaFiles Include="$(ClientDistDir)**\*" Exclude="$(ClientDistDir)index.html" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SpaFiles)" DestinationFolder="wwwroot\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>
