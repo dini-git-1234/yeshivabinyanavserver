@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\BinyanAv.PublicGateway.props" />
-</Project>
