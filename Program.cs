@@ -2,10 +2,16 @@ using BinyanAv.PublicGateway.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
+// טעינת .env (אם קיים) — באחסון חיצוני אפשר להגדיר אותו משתנים ישירות בשרת
+var envFile = Path.Combine(Directory.GetCurrentDirectory(), ".env");
+if (File.Exists(envFile))
+    DotNetEnv.Env.Load(envFile);
+
 var builder = WebApplication.CreateBuilder(args);
 
-var cs = builder.Configuration.GetConnectionString("Gateway")
-    ?? throw new InvalidOperationException("ConnectionStrings:Gateway is not configured (MySQL).");
+var cs = builder.Configuration.GetConnectionString("Gateway");
+if (string.IsNullOrWhiteSpace(cs))
+    throw new InvalidOperationException("ConnectionStrings:Gateway is not configured. Set in .env (ConnectionStrings__Gateway) or host environment (MySQL).");
 
 // יצירת wwwroot כדי ש-UseStaticFiles יוכל להגיש /uploads (תמונות ומסמכים).
 var webRoot = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
