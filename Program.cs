@@ -24,14 +24,13 @@ builder.Services.AddDbContext<GatewayDbContext>(o => o.UseMySql(cs, mysqlVersion
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// Angular, דומיינים שונים בפרודקשן, ובקשות server→server (BinyanAv.Server) — בלי CORS מגביל
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.WithOrigins("https://yeshivabinyanav.onrender.com")
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
+    options.AddDefaultPolicy(policy => policy
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
 });
 
 var app = builder.Build();
