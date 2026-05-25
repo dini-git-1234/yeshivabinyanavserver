@@ -17,6 +17,6 @@ COPY --from=build /app/out .
 # הגדרת הפורט ש-Railway מצפה לו
 ENV ASPNETCORE_URLS=http://+:8080
 EXPOSE 8080
-
+#hh
 # הרצת האפליקציה (שימי לב לשם ה-DLL שלך!)
 ENTRYPOINT ["dotnet", "BinyanAv.PublicGateway.dll"]
