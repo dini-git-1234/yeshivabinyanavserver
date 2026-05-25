@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BinyanAv.PublicGateway.props" />
+</Project>

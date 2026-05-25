@@ -24,13 +24,16 @@ builder.Services.AddDbContext<GatewayDbContext>(o => o.UseMySql(cs, mysqlVersion
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// Angular, דומיינים שונים בפרודקשן, ובקשות server→server (BinyanAv.Server) — בלי CORS מגביל
+// הרשאת CORS לקליינט הפנימי הפרוס ב-Render.
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy => policy
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader());
+    options.AddPolicy("AllowRenderClient",
+        policy =>
+        {
+            policy.WithOrigins("https://yeshivabinyanav.onrender.com")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
 });
 
 var app = builder.Build();
@@ -48,6 +51,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-app.UseCors();
+app.UseCors("AllowRenderClient");
 app.MapControllers();
 app.Run();
