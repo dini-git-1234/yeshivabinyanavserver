@@ -1,5 +1,5 @@
 namespace BinyanAv.PublicGateway.Models;
-
+//D
 /// <summary>תואם לגוף שמגיע מהקליינט אחרי <see cref="UploadController"/>.</summary>
 public class PendingDocumentDto
 {

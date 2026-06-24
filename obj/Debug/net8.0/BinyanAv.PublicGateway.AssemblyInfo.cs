@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BinyanAv.PublicGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cb9a86aa96acab7d99985e28df72cd97480857c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f52c09b550a9b087ec5530a5881ed1466ae8e0f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BinyanAv.PublicGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BinyanAv.PublicGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
